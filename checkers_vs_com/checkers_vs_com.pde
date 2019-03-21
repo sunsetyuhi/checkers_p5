@@ -126,7 +126,7 @@ void man(){
               }
               else if(end_num < numW+numB) {  //残りend_num駒まではmid_d手読み
                 n = -negaalpha(mid_d-2.0,-score_max,score_max)
-            		      +m -position() -numTandems() -numMoves();
+                      +m -position() -numTandems() -numMoves();
               }
               else{
                 n = -negaalpha(end_d-2.0,-score_max,score_max)
