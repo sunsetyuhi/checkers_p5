@@ -136,6 +136,7 @@ boolean drawCheck() {
   return false;
 }
 
+//盤面の記録と呼び出し
 void recorder(boolean inout) {
   if(inout==true){  //記録
     for (int k=1;k<=8;k++){ //駒の配置
