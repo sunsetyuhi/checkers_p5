@@ -27,12 +27,12 @@ void com() {
               }
               else if(end_num < numW+numB) {  //残りend_num駒まではmid_d手読み
                 n = -negaalpha(mid_d-1.0, -score_max,score_max)
-        		          +m -position() -numTandems() -numMoves() +random(1);
+                      +m -position() -numTandems() -numMoves() +random(1);
               }
               else{
                 //n = -negaalpha(end_d -0.5*(numW+numB) -1.0, -score_max,score_max)
                 n = -negaalpha(end_d-1.0, -score_max,score_max)
-		                  +m -position() -numTandems() -numMoves() +random(1);
+                      +m -position() -numTandems() -numMoves() +random(1);
               }
               int mv0 = ceil(float(9-k)/2) +4*(9-l-1);
               int mv1 = ceil(float(9-(k+i))/2) +4*(9-(l+j)-1);
