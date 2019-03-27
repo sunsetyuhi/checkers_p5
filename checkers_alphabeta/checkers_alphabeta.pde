@@ -48,7 +48,7 @@ void setup() {
 void draw() {
   com();
   
-  //no legal moves
+  //合法手が無い時
   if (finish()) {
     fill(255, 0, 0);
     textSize(1.5*side);

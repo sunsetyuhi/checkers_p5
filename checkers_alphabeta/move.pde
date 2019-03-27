@@ -1,3 +1,4 @@
+//合法手を判定
 boolean validMove(int i0, int j0, int i1, int j1) {
   if(i0<1||8<i0 || j0<1||8<j0 || i1<1||8<i1 || j1<1||8<j1) {return false;}  //盤外の手は指せない
   if(board[i0][j0]==0 || board[i1][j1]!=0) {return false;}  //空マスから、または駒があるマスには指せない
@@ -24,6 +25,7 @@ boolean validMove(int i0, int j0, int i1, int j1) {
   return false;
 }
 
+//駒を動かす
 void movePiece(int i0, int j0, int i1, int j1) {
   boolean promote = false;
   mustJump = false;  //強制飛び判定をfalseにする
